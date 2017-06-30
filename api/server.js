@@ -11,21 +11,26 @@ const bodyParser = require('body-parser')
 const fetch = require('isomorphic-fetch')
 
 app.use(cors({ credentials: true, origin: 'http://localhost:5000' }))
-
 app.get('/movies', async (req, res) => {
-  try {
-    const data = await fetch(
-      `${process.env.OMDB_API}&s=${req.query.s}`
-    ).then(res => res.json())
-
-    if (data.Response === 'False') {
-      return res.status(500).send({ message: 'Movie Not Found!' })
-    }
-    res.send(data)
-  } catch (err) {
-    res.status(500).send({ ok: false })
-  }
+  const data = await fetch(
+    `${process.env.OMDB_API}&s=${req.query.s}`
+  ).then(res => res.json())
+  res.send(data)
 })
+// app.get('/movies', async (req, res) => {
+//   try {
+//     const data = await fetch(
+//       `${process.env.OMDB_API}&s=${req.query.s}`
+//     ).then(res => res.json())
+//
+//     if (data.Response === 'False') {
+//       return res.status(500).send({ message: 'Movie Not Found!' })
+//     }
+//     res.send(data)
+//   } catch (err) {
+//     res.status(500).send({ ok: false })
+//   }
+// })
 
 app.post('/favorites', bodyParser.json(), async (req, res) => {
   try {
@@ -40,6 +45,7 @@ app.post('/favorites', bodyParser.json(), async (req, res) => {
 })
 
 app.get('/favorites', async (req, res) => {
+  console.log('foo bar baz')
   const data = await db.allDocs({ include_docs: true })
   res.send(pluck('doc', data.rows))
 })
