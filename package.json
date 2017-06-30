@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "jrs-react-components": "^2.0.4",
+    "mysql": "^2.13.0",
     "ramda": "^0.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

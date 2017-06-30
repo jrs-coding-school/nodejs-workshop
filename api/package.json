@@ -14,9 +14,18 @@
     "cors": "^2.8.3",
     "express": "^4.15.3",
     "express-jwt": "^5.3.0",
+    "json-buffer": "^2.0.11",
+    "mysql": "^2.13.0",
     "pouchdb-find": "^6.2.0",
     "pouchdb-http": "^6.0.2",
-    "ramda": "^0.24.1"
+    "pull-fetch": "^0.1.0",
+    "pull-property": "0.0.3",
+    "pull-stream": "^3.6.0",
+    "pull-stringify": "^2.0.0",
+    "ramda": "^0.24.1",
+    "request": "^2.81.0",
+    "stream-to-pull-stream": "^1.7.2",
+    "through2": "^2.0.3"
   },
   "devDependencies": {
     "dotenv": "^4.0.0",
