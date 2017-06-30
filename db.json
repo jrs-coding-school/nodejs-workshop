@@ -1,0 +1,38 @@
+{
+  "favorites": [
+    {
+      "id": 1,
+      "title": "What about Bob?",
+      "year": "1991",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxMjU2ODk4N15BMl5BanBnXkFtZTgwODQzNTcxMTE@._V1_SX300.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Groundhog Day",
+      "year": "1993",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWIxNzM5YzQtY2FmMS00Yjc3LWI1ZjUtNGVjMjMzZTIxZTIxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Ghostbusters",
+      "year": "1984",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@._V1_SX300.jpg"
+    },
+    {
+      "title": "Caddyshack",
+      "year": "1980",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2QxMGI0ZjgtMDJjMy00NzM3LTgyNGQtMWM0YmYyNmM4OWFiXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+      "imdbID": "tt0080487",
+      "rank": "9",
+      "id": 4
+    },
+    {
+      "title": "Batman Begins",
+      "year": "2005",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg",
+      "imdbID": "tt0372784",
+      "rank": "40",
+      "id": 5
+    }
+  ]
+}
