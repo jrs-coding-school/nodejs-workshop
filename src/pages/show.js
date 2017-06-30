@@ -17,7 +17,7 @@ import { SET_FAVORITE } from '../constants'
 
 function propEquals(id) {
   return function(fav) {
-    return fav['id'] === Number(id)
+    return fav['_id'] === id
   }
 }
 

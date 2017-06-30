@@ -14,11 +14,11 @@ const Home = function(props) {
   function li(fav) {
     return (
       <ImageListItem
-        key={fav.id}
-        id={fav.id}
+        key={fav._id}
+        id={fav._id}
         title={fav.title}
         image={fav.poster}
-        link={<LinkButton to={`/show/${fav.id}`}>Details</LinkButton>}
+        link={<LinkButton to={`/show/${fav._id}`}>Details</LinkButton>}
       />
     )
   }
