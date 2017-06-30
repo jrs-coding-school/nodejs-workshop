@@ -23,7 +23,7 @@
     "couch": "docker run -p 6984:5984 -v $(pwd)/data:/opt/couchdb/data klaemo/couchdb",
     "mysql": "docker run --name mysql -v $(pwd)/mysql:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_HOST=172.17.0.1 -e MYSQL_ROOT_PASSWORD=root mysql/mysql-server",
     "start": "nf start",
-    "api": "json-server --watch db.json -p 4000",
+    "//api": "json-server --watch db.json -p 4000",
     "web": "react-scripts start",
     "build": "react-scripts build",
     "test": "standard",
